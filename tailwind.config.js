@@ -7,7 +7,9 @@ module.exports = {
         'hero': "url('./images/hero.svg')",
       },
       fontFamily: {
-       'poppins':  ['Poppins', 'sans-serif']
+       'poppins':  ['Poppins', 'sans-serif'],
+       'open-sans': ['Open Sans', 'sans-serif'],
+       'gotham': ['Gotham']
       },
       colors: {
         'purple': '#7D0681',
