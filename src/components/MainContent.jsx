@@ -1,12 +1,9 @@
 import React from "react";
-// import { BsFillCircleFill } from 'react-icons/bs'
 import newMoonIcon from '../images/new-moon.svg';
 import image1 from '../images/image1.svg';
 import image2 from '../images/image2.svg';
 import image3 from '../images/whatsapp.svg';
 import image4 from '../images/image3.svg';
-import logo from '../images/shoppa-black.svg';
-import image5 from '../images/image4.svg'
 
 const MainContent = () => {
     return (
@@ -57,26 +54,7 @@ const MainContent = () => {
                     <p className="font-open-sans text-[16px] leading-[22px] md:text-[32px] md:leading-[48px]">Virtual Account Number, get an account number that carries your business name</p>
                 </div>
             </div>
-            {/* <section id="form"> */}
-                <div className=" max-w-[1200px] p-2">
-                <h1 className="mb-3 md:mt-[40px] mt-[40px] text-center text-[16px] leading-[19px] md:leading-[50px] md:text-[45px] my-5 md:my-8 font-bold">Join Other Rebels To Sell On Shoppa!</h1>
-                    <div className=" p-1">
-                        <div className="flex flex-col md:flex-row md:flex  justify-between items-center ">
-                            <div className="bg-light-purple rounded-[23px]  py-4 w-full h-full flex flex-col align-middle">
-                                <img className="mx-auto p-[20px]" src={logo} height={738} width={389} alt='logo'  />
-                                <div className="flex flex-col text-center">
-                                    <input className="my-4 m-6 p-5 rounded-lg" type="text" placeholder="Name"/>
-                                    <input className="my-4 m-6 p-5 rounded-lg" type="text" placeholder="Business Name"/>
-                                    <input className="my-4 m-6 p-5 rounded-lg" type="text" placeholder="Email"/>
-                                    <input className="my-4 m-6 p-5 rounded-lg" type="text" placeholder="Phone Number"/>
-                                    <button  className="text-[16px] leading-[22px] p-4 mt-10 mb-[20px] mx-auto border-purple bg-purple w-[214px] md:w-[287px] h-[54px] md:h-[63px] text-white rounded-[5px] border border-r-button text-center">Join Our Waitlist</button>
-                                </div>
-                            </div>
-                            <img src={image5} className='mt-10 ' height={738} width={389} alt='logo'  />
-                        </div>
-                    </div>
-                </div>
-            {/* </section> */}
+            
         </div>
     )
 }
