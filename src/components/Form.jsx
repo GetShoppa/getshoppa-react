@@ -2,10 +2,15 @@ import React from 'react';
 import { useState } from "react";
 import logo from '../images/shoppa-black.svg';
 import image5 from '../images/image4.svg';
+import 'react-toastify/dist/ReactToastify.css';
+import {toast} from 'react-toastify';
+ 
+
+
+
 
 
 const Form = () => {
-
     const [name, setName] = useState("");
     const [businessName, setBusinessName] = useState("");
     const [email, setEmail] = useState("");
@@ -26,32 +31,38 @@ const Form = () => {
         })
     };
 
-    await fetch('http://54.87.0.100:3000/api/v1/waitlist', requestOptions)
+    await fetch('https://www.ourapi.digital/api/v1/waitlist', requestOptions)
         .then(async response => {
             const isJson = response.headers.get('content-type')?.includes('application/json');
             const data = isJson && await response.json();
 
-            // check for error response
-            if (!response.success) {
+            if (response.status === 'success') {
+                setMessage(response.message + ' successfully!');
+                toast.success('Added to waitlist successfully!')
+                setName("");
+                setBusinessName("");
+                setEmail("");
+                setMobileNumber("");
+            } else if (response.status === 'fail')  {
                 const error = (data && data.message) || response.status;
+                console.error('There was an error!', response.message);
+                toast.error('There was an error!' + response.message)
                 return Promise.reject(error);
             } 
 
-            setMessage(response.message, ' successfully!');
-            setName("");
-            setBusinessName("");
-            setEmail("");
-            setMobileNumber("");
+            
 
         })
         .catch(error => {
             console.error('There was an error!', error);
             setMessage(error);
+            toast.error('There was an error!' + error)
         });
     };
   
     return (
         <div className='font-open-sans  mx-auto w-full pt-[5px] md:pt-[46px] bg-white md:bg-off-grey p-6'>
+        
             <div className=" max-w-[1200px] p-2">
                 <h1 className="mb-3 md:mt-[40px] mt-[40px] text-center text-[16px] leading-[19px] md:leading-[50px] md:text-[45px] my-5 md:my-8 font-bold">Join Other Rebels To Sell On Shoppa!</h1>
                     <div className=" p-1">
