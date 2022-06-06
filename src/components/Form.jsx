@@ -2,10 +2,15 @@ import React from 'react';
 import { useState } from "react";
 import logo from '../images/shoppa-black.svg';
 import image5 from '../images/image4.svg';
+import 'react-toastify/dist/ReactToastify.css';
+import {toast} from 'react-toastify';
+ 
+
+
+toast.configure()
 
 
 const Form = () => {
-
     const [name, setName] = useState("");
     const [businessName, setBusinessName] = useState("");
     const [email, setEmail] = useState("");
@@ -31,13 +36,13 @@ const Form = () => {
             const isJson = response.headers.get('content-type')?.includes('application/json');
             const data = isJson && await response.json();
 
-            // check for error response
             if (!response.success) {
                 const error = (data && data.message) || response.status;
                 return Promise.reject(error);
             } 
 
             setMessage(response.message, ' successfully!');
+            toast.success('Added to waitlist successfully!')
             setName("");
             setBusinessName("");
             setEmail("");
@@ -47,11 +52,13 @@ const Form = () => {
         .catch(error => {
             console.error('There was an error!', error);
             setMessage(error);
+            toast.error('There was an error, please try again')
         });
     };
   
     return (
         <div className='font-open-sans  mx-auto w-full pt-[5px] md:pt-[46px] bg-white md:bg-off-grey p-6'>
+        
             <div className=" max-w-[1200px] p-2">
                 <h1 className="mb-3 md:mt-[40px] mt-[40px] text-center text-[16px] leading-[19px] md:leading-[50px] md:text-[45px] my-5 md:my-8 font-bold">Join Other Rebels To Sell On Shoppa!</h1>
                     <div className=" p-1">

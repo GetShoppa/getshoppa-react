@@ -4,11 +4,23 @@ import Hero from './components/Hero';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 import Form from './components/Form';
-// import Join from './components/Join'
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
     <div>
+      <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+        />
+      <ToastContainer />
       <Navbar/>
       <Hero/>
       <MainContent/>
