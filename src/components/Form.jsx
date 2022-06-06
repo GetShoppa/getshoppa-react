@@ -59,10 +59,10 @@ const Form = () => {
                             <div className="bg-light-purple rounded-[23px]  py-4 w-full h-full flex flex-col align-middle">
                                 <img className="mx-auto p-[20px]" src={logo} height={738} width={389} alt='logo'  />
                                 <form onSubmit={handleSubmit} className="flex flex-col text-center">
-                                    <input value={name} onChange={(e) => setName(e.target.value)} className="my-4 m-6 p-5 rounded-lg" type="text" placeholder="Name"/>
-                                    <input value={businessName} onChange={(e) => setBusinessName(e.target.value)} className="my-4 m-6 p-5 rounded-lg" type="text" placeholder="Business Name"/>
-                                    <input value={email} onChange={(e) => setEmail(e.target.value)}className="my-4 m-6 p-5 rounded-lg" type="text" placeholder="Email"/>
-                                    <input value={mobileNumber} onChange={(e) => setMobileNumber(e.target.value)}className="my-4 m-6 p-5 rounded-lg" type="text" placeholder="Phone Number"/>
+                                    <input required value={name} onChange={(e) => setName(e.target.value)} className="my-4 m-6 p-5 rounded-lg" type="text" placeholder="Name"/>
+                                    <input required value={businessName} onChange={(e) => setBusinessName(e.target.value)} className="my-4 m-6 p-5 rounded-lg" type="text" placeholder="Business Name"/>
+                                    <input required value={email} onChange={(e) => setEmail(e.target.value)}className="my-4 m-6 p-5 rounded-lg" type="text" placeholder="Email"/>
+                                    <input required value={mobileNumber} onChange={(e) => setMobileNumber(e.target.value)}className="my-4 m-6 p-5 rounded-lg" type="text" placeholder="Phone Number"/>
                                     <div className="message text-purple mt-3">{message ? <p>{message}</p> : null}</div>
                                     <button type="submit" className="text-[16px] leading-[22px] p-4 mt-10 mb-[20px] mx-auto border-purple bg-purple w-[214px] md:w-[287px] h-[54px] md:h-[63px] text-white rounded-[5px] border border-r-button text-center">Join Our Waitlist</button>
                                 </form>
