@@ -7,7 +7,7 @@ import {toast} from 'react-toastify';
  
 
 
-toast.configure()
+
 
 
 const Form = () => {
@@ -31,28 +31,32 @@ const Form = () => {
         })
     };
 
-    await fetch('http://54.87.0.100:3000/api/v1/waitlist', requestOptions)
+    await fetch('https://www.ourapi.digital/api/v1/waitlist', requestOptions)
         .then(async response => {
             const isJson = response.headers.get('content-type')?.includes('application/json');
             const data = isJson && await response.json();
 
-            if (!response.success) {
+            if (response.status === 'success') {
+                setMessage(response.message + ' successfully!');
+                toast.success('Added to waitlist successfully!')
+                setName("");
+                setBusinessName("");
+                setEmail("");
+                setMobileNumber("");
+            } else if (response.status === 'fail')  {
                 const error = (data && data.message) || response.status;
+                console.error('There was an error!', response.message);
+                toast.error('There was an error!' + response.message)
                 return Promise.reject(error);
             } 
 
-            setMessage(response.message, ' successfully!');
-            toast.success('Added to waitlist successfully!')
-            setName("");
-            setBusinessName("");
-            setEmail("");
-            setMobileNumber("");
+            
 
         })
         .catch(error => {
             console.error('There was an error!', error);
             setMessage(error);
-            toast.error('There was an error, please try again')
+            toast.error('There was an error!' + error)
         });
     };
   
