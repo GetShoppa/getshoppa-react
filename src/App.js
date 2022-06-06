@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
+import Form from './components/Form';
 // import Join from './components/Join'
 
 function App() {
@@ -11,8 +12,8 @@ function App() {
       <Navbar/>
       <Hero/>
       <MainContent/>
+      <Form/>
       <Footer/>
-      {/* <Join/> */}
     </div>
   );
 }
