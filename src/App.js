@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import MainContent from './components/MainContent';
 import Footer from './components/Footer';
 import Form from './components/Form';
+import Info from './components/Info';
 import { ToastContainer } from 'react-toastify';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <MainContent/>
+      <Info/>
       <Form/>
       <Footer/>
     </div>
