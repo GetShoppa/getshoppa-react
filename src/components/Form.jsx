@@ -6,10 +6,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import {toast} from 'react-toastify';
  
 
-
-
-
-
 const Form = () => {
     const [name, setName] = useState("");
     const [businessName, setBusinessName] = useState("");
