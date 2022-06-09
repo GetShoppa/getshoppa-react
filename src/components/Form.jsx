@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from "react";
 import logo from '../images/shoppa-black.svg';
-import image5 from '../images/image4.svg';
 import 'react-toastify/dist/ReactToastify.css';
 import {toast} from 'react-toastify';
  
@@ -67,7 +66,6 @@ const Form = () => {
                                     <button type="submit" className="text-[16px] leading-[22px] p-4 mt-10 mb-[20px] mx-auto border-purple bg-purple w-[214px] md:w-[287px] h-[54px] md:h-[63px] text-white rounded-[5px] border border-r-button text-center">Join Our Waitlist</button>
                                 </form>
                             </div>
-                            <img src={image5} className='mt-10 ' height={738} width={389} alt='logo'  />
                         </div>
                     </div>
             </div>
