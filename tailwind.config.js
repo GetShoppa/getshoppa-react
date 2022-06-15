@@ -9,7 +9,7 @@ module.exports = {
       fontFamily: {
        'poppins':  ['Poppins', 'sans-serif'],
        'open-sans': ['Open Sans', 'sans-serif'],
-       'gotham': ['Gotham']
+      //  'gotham': ['Gotham']
       },
       colors: {
         'purple': '#7D0681',
