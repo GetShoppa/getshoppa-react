@@ -4,6 +4,9 @@ import { Routes, Route } from 'react-router-dom';
 import Login from './pages/Login/Login.jsx';
 import SignUp from './pages/Login/SignUp.jsx';
 import CreateStore from './pages/Login/CreateStore.jsx';
+import AddProduct from './pages/Login/AddProduct.jsx';
+import AddImage from './pages/Login/AddImage.jsx';
+import AddProductCtd from './pages/Login/AddProductCtd';
 import LandingPage from './pages/LandingPage/LandingPage'
 
 
@@ -27,6 +30,9 @@ function App() {
         <Route exact path='/login' element={<Login/>} />
         <Route exact path='/signup' element={<SignUp/>} />
         <Route exact path='/create-store' element={<CreateStore/>} />
+        <Route exact path='/add-product' element={<AddProduct/>} />
+        <Route exact path='/add-image' element={<AddImage/>} />
+        <Route exact path='/add-product-2' element={<AddProductCtd/>} />
       </Routes>
     </div>
   );

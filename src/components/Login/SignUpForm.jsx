@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import ReactDOM from "react-dom";
-import { Formik, Form, useField, useFormikContext } from "formik";
-import styled from "@emotion/styled";
+import React from "react";
+// import ReactDOM from "react-dom";
+import { Formik, Form, useField } from "formik";
+// import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 import * as Yup from "yup";
 
@@ -23,22 +23,7 @@ const MyTextInput = ({ label, ...props }) => {
     );
   };
   
-  
 
-  
-  const StyledErrorMessage = styled.div`
-    font-size: 12px;
-    color: var(--red-600);
-    width: 400px;
-    margin-top: 0.25rem;
-    &:before {
-      content: "❌ ";
-      font-size: 10px;
-    }
-    @media (prefers-color-scheme: dark) {
-      color: var(--red-300);
-    }
-  `;
 
 
 const SignUpForm = () => {
