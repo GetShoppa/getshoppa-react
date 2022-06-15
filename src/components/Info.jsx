@@ -8,30 +8,31 @@ const Info = () => {
                 
                 <div className=" md:p-8 text-center mr-0 ml-0 w-full  md:text-right">
                     <div></div>
-                    <div className="container left-text">
+                    <div className="container-left-text">
                         <h1 className="col-span-2 font-poppins mb-2 md:mt-[40px] mt-[40px] text-[16px] leading-[19px] md:leading-[50px] md:text-[32px] my-5 font-bold">Issue invoice and collect payment without arguments or back n forth</h1>
-                        <p className="col-span-2 font-poppins text-[16px] leading-[22px] md:text-[24px] md:leading-[48px] mt-1 mb-10">With Shoppa, you can offer your customers flexible payment options such as bank transfer, card payment or ussd. You can also receive crypto payments in stablecoins.</p>
+                        <p className="col-span-2 font-poppins text-[16px] leading-[22px] md:text-[18px] md:leading-[35px] mt-1 mb-10">With Shoppa, you can offer your customers flexible payment options such as bank transfer, card payment or ussd. You can also receive crypto payments in stablecoins.</p>
                     </div>
                  </div>
-                <div className="max-w-400px md:max-w-[900px] md:p-8">
-                <h1 className="font-gotham mb-2 md:mt-[40px] mt-[40px] text-[16px] leading-[19px] md:leading-[50px] text-center md:text-left md:text-[45px] my-5 font-bold">What More?</h1>
-                <p className="font-open-sans text-[16px] leading-[22px] md:text-[32px] md:leading-[48px] mt-1 mb-10">Our mission is simple; empower you to build a profitable and sustainable business online</p>
+                <div className="container-right-text">
+                <h1 className="font-poppins mb-2 md:mt-[40px] mt-[40px] text-[16px] leading-[19px] md:leading-[50px] text-center md:text-left md:text-[35px] my-5 font-bold">What More?</h1>
+                <p className="font-poppins text-[16px] leading-[22px] md:text-[17px] md:leading-[48px] mt-1 mb-10">Our mission is simple; empower you to build a profitable and sustainable business online</p>
                 </div>
                 <div className="w-full mt-5">
                     <div className="text-white my-3 text-left  flex flex-row p-4 ">
-                        <p className="font-open-sans  text-[16px] leading-[22px] md:text-[32px] md:leading-[48px]"><span className="font-bold text-[18px] md:text-[34px]">Crypto wallet</span>, so you can collect crypto payments from your customers</p>
+                        <p className="font-poppins  text-[16px] leading-[22px] md:text-[17px] md:leading-[48px]"><span className="font-bold text-[18px] md:text-[22px]">Crypto wallet</span>, so you can collect crypto payments from your customers</p>
                     </div>
                     <div className="text-white my-3 text-left  flex flex-row p-4 ">
-                        <p className="font-open-sans text-[16px] leading-[22px] md:text-[32px] md:leading-[48px]"><span className="font-bold text-[18px] md:text-[34px]">Escrow</span>, to enable you securely collect payment from customers before delivery to prevent arguments</p>
+                        <p className="font-poppins text-[16px] leading-[22px] md:text-[17px] md:leading-[48px]"><span className="font-bold text-[18px] md:text-[22px]">Escrow</span>, to enable you securely collect payment from customers before delivery to prevent arguments</p>
                     </div>
                     <div className="text-white my-3 text-left  flex flex-row p-4 ">
-                        <p className="font-open-sans text-[16px] leading-[22px] md:text-[32px] md:leading-[48px]"><span className="font-bold text-[18px] md:text-[34px]">Credit</span>, we want to support you with funds to finance inventory & scale your business</p>
+                        <p className="font-poppins text-[16px] leading-[22px] md:text-[17px] md:leading-[48px]"><span className="font-bold text-[18px] md:text-[22px]">Credit</span>, we want to support you with funds to finance inventory & scale your business</p>
                     </div>
                     <div className="text-white my-3 text-left  flex flex-row p-4 ">
-                        <p className="font-open-sans text-[16px] leading-[22px] md:text-[32px] md:leading-[48px]"><span className="font-bold text-[18px] md:text-[34px]">Virtual Account Number</span>, get an account number that carries your business name</p>
+                        <p className="font-poppins text-[16px] leading-[22px] md:text-[17px] md:leading-[48px]"><span className="font-bold text-[18px] md:text-[22px]">Virtual Account Number</span>, get an account number that carries your business name</p>
                     </div>
                 </div>
-                <div className="flex flex-col md:flex-row">
+                <div class="container-create-store">
+                <div className="flex flex-col md:flex-row flex-1">
                     <div className="">
                          <img src={appScreen} className='mt-10 hidden md:block' height={560} width={700} alt='app screen'  />
                     </div>
@@ -52,6 +53,7 @@ const Info = () => {
                             <p className="text-[10px] leading-[14px] md:text-[16px] md:leading-[22px]">Choose plan fron the plan guide thst suits your demands</p>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
