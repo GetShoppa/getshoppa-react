@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import MainContent from './components/MainContent';
-import Footer from './components/Footer';
-import Form from './components/Form';
-import Info from './components/Info';
 import { ToastContainer } from 'react-toastify';
+import { Routes, Route } from 'react-router-dom';
+import Login from './pages/Login/Login.jsx';
+import SignUp from './pages/Login/SignUp.jsx';
+import CreateStore from './pages/Login/CreateStore.jsx';
+import LandingPage from './pages/LandingPage/LandingPage'
+
 
 function App() {
   return (
@@ -22,12 +22,12 @@ function App() {
             pauseOnHover
         />
       <ToastContainer />
-      <Navbar/>
-      <Hero/>
-      <MainContent/>
-      <Info/>
-      <Form/>
-      <Footer/>
+      <Routes>
+        <Route exact path='/' element={<LandingPage />} />
+        <Route exact path='/login' element={<Login/>} />
+        <Route exact path='/signup' element={<SignUp/>} />
+        <Route exact path='/create-store' element={<CreateStore/>} />
+      </Routes>
     </div>
   );
 }
