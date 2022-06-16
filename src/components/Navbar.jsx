@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <div className="flex justify-between items-center h-38 max-w-[1240px] mx-auto pr-4 bg-white w-full text-black">
-            <img src={logo} height={106} width={200} alt='logo'  />
+            <img src={logo} height={106} width={200} alt='logo' />
             <ul className="hidden md:flex font-poppins">
                 <li className="p-4 text-normal">Pricing</li>
                 <li className="p-4 mt-3 mx-3 bg-purple w-[238px] h-[43px] text-white flex justify-center items-center rounded-2xl border border-r-button text-center">Vendors Login</li>
