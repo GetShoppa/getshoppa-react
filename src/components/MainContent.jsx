@@ -18,7 +18,6 @@ const MainContent = () => {
             <div className="max-w-400px md:max-w-[900px] md:p-8 text-center md:text-left">
                <h1 className="font-poppins  mb-2 md:mt-[40px] mt-[40px] text-[16px] leading-[19px] md:leading-[50px] md:text-[45px] my-5 font-bold">Sell everywhere and anywhere!</h1>
                <p className="font-poppins text-[12px] leading-[22px] md:text-[25px] md:leading-[48px] mt-1 mb-10">Share your list link on whatsapp, instagram, facebook, twitter, tiktok easily</p>
-               {/* <img src={image2} alt='person 2' /> */}
                <div className="container mx-auto md:w-[630px] sm:w-[500px] xl:w-[1200px] w-full ">
                 <img src={image2} alt='person 2' className="object-cover w-full h-fit object-center"/>
                 </div>
@@ -26,7 +25,6 @@ const MainContent = () => {
             <div className="max-w-400px md:max-w-[900px] md:p-8 text-center md:text-left">
                <h1 className="font-poppins  mb-2 md:mt-[40px] mt-[35px] text-[16px] leading-[19px] md:leading-[50px] md:text-[45px] my-5 font-bold">Receive all orders right into your whatsapp</h1>
                <p className="font-poppins text-[12px] leading-[22px] md:text-[25px] md:leading-[48px] mt-1 mb-10">Get your order and delivery details as one message on whatsapp, with just a hit of a button, your customers can reach out to you</p>
-               {/* <img src={image3} alt='person 3' /> */}
                <div className="container mx-auto md:w-[630px] sm:w-[500px] xl:w-[1200px] w-full ">
                 <img src={image3} alt='person 3' className="object-cover w-full h-fit object-center"/>
                 </div>
@@ -34,7 +32,6 @@ const MainContent = () => {
             <div className="max-w-400px md:max-w-[900px] md:p-8 text-center md:text-left">
                <h1 className="font-poppins mb-2 md:mt-[40px] mt-[40px] text-[16px] leading-[19px] md:leading-[50px] md:text-[45px] my-5 font-bold">Keep track of all orders, customers and payment from one dashboard</h1>
                <p className="font-poppins text-[12px] leading-[22px] md:text-[25px] md:leading-[48px] mt-1 mb-10">Stay organized and build a healthy business with our confirmed order auto-update, records of customers that have bought from you and analytics of how well you are doing as a business</p>
-               {/* <img src={image4} alt='dashboard'/> */}
                <div className="container mx-auto md:w-[630px] sm:w-[500px] xl:w-[1200px] w-full ">
                 <img src={image4} alt='person 4' className="object-cover w-full h-fit object-center"/>
                 </div>
