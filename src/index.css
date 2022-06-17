@@ -8,15 +8,26 @@ body {
 .info{
   background: #E5E5E5;
 }
-.container-left-text{
+
+/*----------- MEDIA QUERIES ------------*/
+
+@media  screen and (min-width: 768) and (max-width: 1940){
+
+  .container-left-text{
   margin-left: 1150px;
-  text-align: left;
+  text-align: right;
+  /* border: 1px solid red; */
+}
+
+  .container-right-text{
+    margin-right: 1200px;
+  }
+  
+  .container-create-store{
+    margin-left: 500px;
+  }
+  .text-padding {
+    padding: 50px;
+  }
 } 
 
-.container-right-text{
-  margin-right: 1200px;
-}
-
-.container-create-store{
-  margin-left: 500px;
-}

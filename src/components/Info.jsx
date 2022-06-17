@@ -5,7 +5,6 @@ const Info = () => {
     return (
         <div className="font-open-poppins  mx-auto w-full pt-[5px] text-white md:pt-[46px] bg-[#2F2E2E] p-6">
             <div className=" md:p-12 text-center md:text-left">
-                
                 <div className=" md:p-8 text-center mr-0 ml-0 w-full  md:text-right">
                     <div></div>
                     <div className="container-left-text">
@@ -25,7 +24,7 @@ const Info = () => {
                         <p className="font-poppins text-[16px] leading-[22px] md:text-[17px] md:leading-[48px]"><span className="font-bold text-[18px] md:text-[22px]">Escrow</span>, to enable you securely collect payment from customers before delivery to prevent arguments</p>
                     </div>
                     <div className="text-white my-3 text-left  flex flex-row p-4 ">
-                        <p className="font-poppins text-[16px] leading-[22px] md:text-[17px] md:leading-[48px]"><span className="font-bold text-[18px] md:text-[22px]">Credit</span>, we want to support you with funds to finance inventory & scale your business</p>
+                        <p className="font-poppins text-[16px] leading-[22px] md:text-npm start[17px] md:leading-[48px]"><span className="font-bold text-[18px] md:text-[22px]">Credit</span>, we want to support you with funds to finance inventory & scale your business</p>
                     </div>
                     <div className="text-white my-3 text-left  flex flex-row p-4 ">
                         <p className="font-poppins text-[16px] leading-[22px] md:text-[17px] md:leading-[48px]"><span className="font-bold text-[18px] md:text-[22px]">Virtual Account Number</span>, get an account number that carries your business name</p>
