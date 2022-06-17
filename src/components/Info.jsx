@@ -5,7 +5,6 @@ const Info = () => {
     return (
         <div className="font-open-poppins  mx-auto w-full pt-[5px] text-white md:pt-[46px] bg-[#2F2E2E] p-6">
             <div className=" md:p-12 text-center md:text-left">
-                
                 <div className=" md:p-8 text-center mr-0 ml-0 w-full  md:text-right">
                     <div></div>
                     <div className="container-left-text">
