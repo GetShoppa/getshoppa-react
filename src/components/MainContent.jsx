@@ -12,7 +12,7 @@ const MainContent = () => {
                 <div className="container mx-auto md:w-[630px] sm:w-[500px] xl:w-[1200px] w-full ">
                 <img src={image1} alt='image 1' className="object-cover w-full h-fit object-center"/>
                 </div>
-                <button className="mx-auto md:mx-0 mt-10 mb-30px] border-purple bg-purple w-[150px] h-[15px] flex justify-center items-center md:w-[180px] md:h-[50px] text-white rounded-[12px] border border-r-button text-center my-5 font-bold">Join the waitlist</button>
+                <button className="mx-auto md:mx-0 mt-10 mb-30px] border-purple bg-purple w-[150px] h-[30px] flex justify-center items-center md:w-[180px] md:h-[50px] text-white rounded-[12px] border border-r-button text-center my-5 font-bold">Join the waitlist</button>
 
             </div>
             <div class="text-padding" className="max-w-400px md:max-w-[900px] md:p-8 text-center md:text-left">
