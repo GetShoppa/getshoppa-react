@@ -12,18 +12,18 @@ const MainContent = () => {
                 <div className="container mx-auto md:w-[630px] sm:w-[500px] xl:w-[1200px] w-full ">
                 <img src={image1} alt='image 1' className="object-cover w-full h-fit object-center"/>
                 </div>
-                <button className="mx-auto md:mx-0 mt-10 mb-30px] border-purple bg-purple w-[150px] h-[15px] flex justify-center items-center md:w-[180px] md:h-[50px] text-white rounded-[12px] border border-r-button text-center my-5 font-bold">Join the waitlist</button>
+                <button className="mx-auto md:mx-0 mt-10 mb-30px] border-purple bg-purple w-[150px] h-[30px] flex justify-center items-center md:w-[180px] md:h-[50px] text-white rounded-[12px] border border-r-button text-center my-5 font-bold">Join the waitlist</button>
 
             </div>
             <div class="text-padding" className="max-w-400px md:max-w-[900px] md:p-8 text-center md:text-left">
                <h1 className="font-poppins  mb-2 md:mt-[40px] mt-[40px] text-[16px] leading-[19px] md:leading-[50px] md:text-[45px] my-5 font-bold">Sell everywhere and anywhere!</h1>
-               <p className="font-poppins text-[12px] leading-[22px] md:text-[25px] md:leading-[48px] mt-1 mb-10">Share your list link on whatsapp, instagram, facebook, twitter, tiktok easily</p>
+               <p className="font-poppins text-[12px] leading-[22px] md:text-[25px] md:leading-[48px] mt-1 mb-10">Share your list link on Whatsapp, Instagram, Facebook, Twitter, Tiktok easily</p>
                <div className="container mx-auto md:w-[630px] sm:w-[500px] xl:w-[1200px] w-full ">
                 <img src={image2} alt='image 2' className="object-cover w-full h-fit object-center"/>
                 </div>
             </div>
             <div class="text-padding" className="max-w-400px md:max-w-[900px] md:p-8 text-center md:text-left">
-               <h1 className="font-poppins  mb-2 md:mt-[40px] mt-[35px] text-[16px] leading-[19px] md:leading-[50px] md:text-[45px] my-5 font-bold">Receive all orders right into your whatsapp</h1>
+               <h1 className="font-poppins  mb-2 md:mt-[40px] mt-[35px] text-[16px] leading-[19px] md:leading-[50px] md:text-[45px] my-5 font-bold">Receive all orders right into your Whatsapp</h1>
                <p className="font-poppins text-[12px] leading-[22px] md:text-[25px] md:leading-[48px] mt-1 mb-10">Get your order and delivery details as one message on whatsapp, with just a hit of a button, your customers can reach out to you</p>
                <div className="container mx-auto md:w-[630px] sm:w-[500px] xl:w-[1200px] w-full ">
                 <img src={image3} alt='image 3' className="object-cover w-full h-fit object-center"/>
